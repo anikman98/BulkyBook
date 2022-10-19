@@ -7,4 +7,18 @@
 		</div>
 	</div>
 	<hr />
+	<div class="form-group">
+		<form method="post">
+			<div class="mb-3">
+				<label asp-for="Name" class="form-label"></label>
+				<input class="form-control" asp-for="Name" />
+			</div>
+			<div class="mb-3">
+				<label asp-for="DisplayOrder" class="form-label"></label>
+				<input class="form-control" asp-for="DisplayOrder" />
+			</div>
+			<button class="btn btn-dark" type="submit" style="width:150px">Create</button>
+			<a asp-controller="Category" asp-action="Index" class="btn btn-dark" style="width:150px">Go back</a>
+		</form>
+	</div>
 </div>
